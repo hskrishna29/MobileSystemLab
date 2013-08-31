@@ -1,0 +1,30 @@
+Protocols : 
+
+Set of methods that can be used by objects of any class, in a given situation.
+
+- Used to declare methods or properties which are independent of any class.
+- The methods in the protocol can be implemented by any class
+  directly without inheritance.
+- A class that declares a protocol must implement all the methods in that protocol.
+
+eg.
+	@interface shape:NSObject
+	{
+	-(void)getDimension;
+	}
+	@protocol size
+	-(float)volume:(float)side;
+	@end
+
+Here shape must implement the volume method in the protocol size.
+
+Subclass:
+
+Subclasses can inherit methods from their super class and override them.
+A subclass unlike protocol, need not implement all methods of its super class.
+
+eg.
+	@interface circle:shape
+	{
+	//circle may or may not implement the getDimension method in shape.
+	} 
