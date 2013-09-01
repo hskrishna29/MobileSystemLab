@@ -5,9 +5,9 @@
 int main(int argc,char *argv[])
 {
 	emp *em = [[emp alloc]init];
-	[em setName:@"Utkarsh"];
+	[em setName:@"Krishna"];
 	[em setDept:@"IS"];
-	[em setEid: 115 ];
+	[em setEid: 37 ];
 	NSLog(@"Name :%@  Dept :%@  ID  :%d",[em getName],[em getDept],[em getEid]);
 	NSLog(@"Dept :%@",[em getDept]);
 	NSLog(@"ID :%d",[em getEid]);
