@@ -2,6 +2,8 @@
 @implementation emp
 
 //@synthesize name,dept,eid;
+
+// with synthesize, set methods will be commented. only the get definitions are needed.
 -(void) setName: (NSString*)n
 {
 	name = n;
