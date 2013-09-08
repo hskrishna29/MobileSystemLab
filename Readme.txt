@@ -7,6 +7,6 @@ Mobile System Engineering Lab
 Assignments
 =============================
 
-1. Protocols vs Subclasses.
-2. Use of NSDictionary.
-3. Use of NSDate.
+1. Assignment1 - Protocols vs Subclasses.
+2. Assignment2 - Use of NSDictionary.
+3. Assignment3 - Use of NSDate.
