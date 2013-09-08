@@ -4,8 +4,8 @@
 @implementation Tax
 -(void)printTax
 {
-   NSLog(@"The total tax is %.2f",totalTax);
-   NSLog(@"The total bill amount is %.2f",totalAmount);
+   NSLog(@"Tax amount : %.2f",totalTax);
+   NSLog(@"Bill amount : %.2f",totalAmount);
 }
 -(void)CalculateTax:(Bill*) bill
 {
