@@ -2,8 +2,8 @@
 #import "bill.h"
 @interface Tax:NSObject
 {
- float totalTax;
- float totalAmount;
+ float taxamount;
+ float billamount;
 }
 -(void)printTax;
 -(void)CalculateTax:(Bill*) bill;
