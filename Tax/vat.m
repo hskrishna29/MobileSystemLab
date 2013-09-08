@@ -7,7 +7,7 @@
 {
    float rate=0.08;
    float amt=[bill amount];
-   totalAmount=amt+amt*rate;
-   totalTax=amt*rate;
+   billamount=amt+amt*rate;
+   taxamount=amt*rate;
 }
 @end
