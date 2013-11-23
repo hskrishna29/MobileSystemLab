@@ -1,0 +1,45 @@
+Dalvik virtual machine instructions:
+
+1. nop
+No operation
+
+2. move vx,vy
+Moves the content of vy into vx. Both registers must be in the first 256 register range.
+Eg. move v0, v1 -> Moves v1 into v0.
+
+3. move/from16 vx,vy
+Moves the content of vy into vx. vy may be in the 64k register range while vx is one of the first 256 registers.
+move/from16 v0, v25 -> Moves v25 into v0.
+
+4. move-wide/from16 vx,vy
+Moves a long/double value from vy to vx. vy may be in the 64k register range while wx is one of the first 256 registers.
+move-wide/from16 v22, v0 -> Moves v0 into v22.
+
+5. move-object vx,vy
+Moves the object reference from vy to vx.
+move-object v1, v8 -> Moves the object reference in v8 to v1.
+
+6. move-object/from16 vx,vy
+Moves the object reference from vy to vx, vy can address 64k registers and vx can address 256 registers.
+move-object/from16 v1, v21 -> Move the object reference in v21 to v1.
+
+7. const/4 vx,lit4
+Puts the 4 bit constant into vx
+const/4 v1, #int2 -> Moves literal 2 into v1.
+
+Mobile computing vs cloud computing:
+
+Mobile computing - 
+Physical device with the user.
+Limited power supply,  battery powered.
+Computing power depends on the device.
+
+Cloud computing - 
+Not a physical device with the user.
+Powered through electric wires. 
+Greater computing power, which can be changed to cater to the needs of the user.
+
+Context aware application: 
+
+An application which notifies the user , through an alarm or message ,  upon reaching a certain location. This is called location awareness.
+The application is aware of the location of the mobile phone ,  and starts a new process when there is a change in location, or maybe when a specified destination is reached.
